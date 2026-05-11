@@ -38,6 +38,7 @@
       text-align: center;
       position: sticky;
       top: 0;
+      z-index: 10;
     }
 
     nav a {
@@ -52,7 +53,7 @@
     }
 
     main {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 2rem auto;
       padding: 0 1.5rem;
     }
@@ -72,11 +73,40 @@
       color: #12343b;
     }
 
+    .projects-grid {
+      display: flex;
+      gap: 1.5rem;
+      overflow-x: auto;
+      padding-bottom: 1rem;
+    }
+
+    .project-card {
+      min-width: 280px;
+      max-width: 280px;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fafafa;
+      flex-shrink: 0;
+    }
+
+    .project-card img {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      display: block;
+    }
+
+    .project-card .content {
+      padding: 1rem;
+    }
+
     .publication {
       margin-bottom: 1.25rem;
     }
 
-    .publication a {
+    .publication a,
+    section a {
       color: #0b5f75;
       font-weight: bold;
     }
@@ -94,17 +124,21 @@
 
   <header>
     <h1>Alina Spera</h1>
-    <p>PhD | Arctic Coastal Biogeochemistry & Hydrology </p>
+    <p>PhD | Arctic Coastal Biogeochemistry & Hydrology</p>
     <p>
       I am a coastal biogeochemical and hydrology researcher studying the impacts of climate change on Arctic coastal environments.
       I integrate environmental and remote sensing data with in situ measurements of surface and groundwater to examine how ecological
       processes, nutrient fluxes, and physical forces interact to drive ecosystem response and resilience.
     </p>
+<p>
+  <a href="speraCV.pdf" target="_blank" style="color: #ffffff; font-weight: bold;">
+    Download CV
+  </a>
+</p>
   </header>
 
   <nav>
     <a href="#about">About</a>
-    <a href="#research">Research</a>
     <a href="#projects">Projects</a>
     <a href="#publications">Publications</a>
     <a href="#contact">Contact</a>
@@ -124,13 +158,13 @@
       </p>
     </section>
 
-     <section id="projects">
+    <section id="projects">
       <h2>Projects</h2>
 
       <div class="projects-grid">
 
         <div class="project-card">
-          <img src="project1.jpg" alt="Project 1">
+          <img src="project1.jpg" alt="Ice-ocean interactions in nearshore Arctic">
           <div class="content">
             <strong>Ice-ocean Interactions in Nearshore Arctic</strong>
             <p>Investigating wind-driven circulation and riverine influence as drivers of carbon dynamics and ice-ocean interactions in nearshore Arctic estuaries and shelf environments.</p>
@@ -138,7 +172,7 @@
         </div>
 
         <div class="project-card">
-          <img src="project2.jpg" alt="Project 2">
+          <img src="project2.jpg" alt="Coastal inundation and tundra hydrology">
           <div class="content">
             <strong>Coastal Inundation & Tundra Hydrology</strong>
             <p>Examining how saltwater intrusion alters subsurface thermal regimes and surface ecosystem processes.</p>
@@ -146,7 +180,7 @@
         </div>
 
         <div class="project-card">
-          <img src="project3.jpg" alt="Project 3">
+          <img src="project3.jpg" alt="Biogeochemical impacts of thermal alteration">
           <div class="content">
             <strong>Biogeochemical Impacts of Thermal Alteration</strong>
             <p>Studying how thermal changes alter carbon cycling and ecological processes in small Arctic aquatic ecosystems.</p>
@@ -157,7 +191,7 @@
     </section>
 
     <section id="publications">
-      <h2>Publications</h2>
+      <h2>Selected Publications</h2>
 
       <p>
         Full list of publications available on 
@@ -195,6 +229,7 @@
           <a href="https://doi.org/10.1029/2024JG008459" target="_blank">View publication</a>
         </p>
       </div>
+    </section>
 
     <section id="contact">
       <h2>Contact</h2>
