@@ -32,7 +32,41 @@
       font-size: 1.1rem;
     }
 
-    nav {
+   .header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* allows stacking on small screens */
+}
+
+.header-text {
+  max-width: 600px;
+  text-align: left;
+}
+
+.headshot {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid rgba(255,255,255,0.9);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.cv-button {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #ffffff;
+  color: #12343b;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+ nav {
       background: #0b2328;
       padding: 0.75rem;
       text-align: center;
@@ -123,19 +157,21 @@
 <body>
 
   <header>
-    <h1>Alina Spera</h1>
-    <p>PhD | Arctic Coastal Biogeochemistry & Hydrology</p>
-    <p>
-      I am a coastal biogeochemical and hydrology researcher studying the impacts of climate change on Arctic coastal environments.
-      I integrate environmental and remote sensing data with in situ measurements of surface and groundwater to examine how ecological
-      processes, nutrient fluxes, and physical forces interact to drive ecosystem response and resilience.
-    </p>
-<p>
-  <a href="speraCV.pdf" target="_blank" style="color: #ffffff; font-weight: bold;">
-    Download CV
-  </a>
-</p>
-  </header>
+  <div class="header-content">
+    
+    <img src="headshot.jpg" alt="Alina Spera" class="headshot">
+
+    <div class="header-text">
+      <h1>Alina Spera</h1>
+      <p>PhD | Arctic Coastal Biogeochemistry & Hydrology</p>
+
+      <p>
+        <a href="speraCV.pdf" target="_blank" class="cv-button">Download CV</a>
+      </p>
+    </div>
+
+  </div>
+</header>
 
   <nav>
     <a href="#about">About</a>
@@ -148,14 +184,16 @@
 
     <section id="about">
       <h2>About</h2>
-      <p>
-        My research focuses on Arctic coastal environments, where climate change is reshaping hydrologic connectivity,
-        biogeochemical cycling, and ecosystem resilience.
+<p>
+        I am a coastal biogeochemical and hydrology researcher studying the impacts of climate change on rapidly changing coastal environments. My research focuses on Arctic aquatic ecosystems and coastlines, where thermal and hydrologic change are reshaping hydrologic connectivity, biogeochemical cycling, and ecosystem resilience.
       </p>
-      <p>
-        My work combines field measurements, geospatial analysis, remote sensing, and environmental datasets to better
-        understand how coastal ecosystems respond to rapid environmental change.
+<p>
+My work combines field measurements, geospatial analysis, remote sensing, and environmental sensing datasets to examine how ecological processes, nutrient fluxes, and physical forces interact to drive ecosystem response.
       </p>
+<p>
+In my current appointment at WHOI in the <a href="https://juliaguimond.com/" target="_blank">Guimond Group</a> I am studying hydrothermal impacts and ecological consequences of coastal inundation and saltwater intrusion on permafrost associated coastlines.
+</p>
+
     </section>
 
     <section id="projects">
@@ -167,7 +205,7 @@
           <img src="project1.jpg" alt="Ice-ocean interactions in nearshore Arctic">
           <div class="content">
             <strong>Ice-ocean Interactions in Nearshore Arctic</strong>
-            <p>Investigating wind-driven circulation and riverine influence as drivers of carbon dynamics and ice-ocean interactions in nearshore Arctic estuaries and shelf environments.</p>
+            <p>Changing climate patterns and surface hydrology are altering nearshore nutrient cycling and circulation. I am studying the interactions of wind-driven circulation and riverine influence as drivers of carbon dynamics and ice-ocean interactions in nearshore Arctic environments.</p>
           </div>
         </div>
 
@@ -175,7 +213,7 @@
           <img src="project2.jpg" alt="Coastal inundation and tundra hydrology">
           <div class="content">
             <strong>Coastal Inundation & Tundra Hydrology</strong>
-            <p>Examining how saltwater intrusion alters subsurface thermal regimes and surface ecosystem processes.</p>
+            <p>Coastal inundation is becoming more prevalent across Alaskan coastlines, however, little in known about the long term hydrothermal implications. Our work is studying the emerging vulnerability of permafrost coastlines and coastal ecosystems to saltwater intrusion and salinization.</p>
           </div>
         </div>
 
@@ -183,7 +221,7 @@
           <img src="project3.jpg" alt="Biogeochemical impacts of thermal alteration">
           <div class="content">
             <strong>Biogeochemical Impacts of Thermal Alteration</strong>
-            <p>Studying how thermal changes alter carbon cycling and ecological processes in small Arctic aquatic ecosystems.</p>
+            <p>Accelerating peramfrost thaw is mobilizing biogeochemical constituents and disrupting surface-subsurface connectivity on the Arctic coastal plain. I study how ecological processes like carbon cycling may respond to rapid geomorphological and hydrological changes. </p>
           </div>
         </div>
 
