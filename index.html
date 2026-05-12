@@ -3,7 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alina Spera - PhD</title>
+  <title>Alina Spera</title>
+
+<meta property="og:title" content="Alina Spera">
+<meta property="og:description" content="Arctic Coastal Biogeochemistry & Hydrology Research">
+<meta property="og:image" content="https://www.alinaspera.com/project2.jpg">
+<meta property="og:url" content="https://www.alinaspera.com">
+<meta name="twitter:card" content="summary_large_image">
 
   <style>
     body {
@@ -47,11 +53,11 @@
 }
 
 .headshot {
-  width: 250px;
-  height: 250px;
+  width: 350px;
+  height: 350px;
   object-fit: cover;
   border-radius: 50%;
-  border: 4px solid rgba(255,255,255,0.9);
+  border: 1px solid rgba(255,255,255,0.9);
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
@@ -91,6 +97,7 @@
       padding: 0 1.5rem;
     }
 
+
 section {
   margin-bottom: 3rem;
   padding: 1rem 0;
@@ -102,38 +109,53 @@ section {
   margin-bottom: 1rem;
   color: #12343b;
 }
-
-    .projects-grid {
+.about-container {
   display: flex;
-  gap: 2rem;
-  overflow-x: auto;
-  padding-bottom: 1rem;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  max-height: 420px;     /* keeps it from getting too tall */
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+.projects-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .project-card {
-  min-width: 420px;
-  max-width: 420px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
   background: white;
-  border-radius: 12px;
+  border-radius: 14px;
   overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-  transition: transform 0.2s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
 }
 
 .project-card img {
   width: 100%;
-  height: 240px;
+  height: 320px;   /* bigger image = more visual */
   object-fit: cover;
 }
 
 .project-card .content {
-  padding: 1.25rem;
+  padding: 1.5rem;
 }
-
     .publication {
       margin-bottom: 1.25rem;
     }
@@ -150,6 +172,13 @@ section {
       color: #666;
       font-size: 0.9rem;
     }
+
+.photo-credit {
+  font-size: 0.75rem;
+  color: #777;
+  margin-top: 0.3rem;
+  padding-left: 1.25rem;
+}
   </style>
 </head>
 
@@ -174,42 +203,67 @@ section {
 
   <nav>
     <a href="#about">About</a>
-    <a href="#projects">Projects</a>
+    <a href="#projects">Research</a>
     <a href="#publications">Publications</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <main>
+<section id="about">
+  <h2>About</h2>
 
-    <section id="about">
-      <h2>About</h2>
-<p>
-        I am a coastal biogeochemical and hydrology researcher studying the impacts of climate change on rapidly changing coastal environments. My research focuses on Arctic aquatic ecosystems and coastlines, where thermal and hydrologic change are reshaping hydrologic connectivity, biogeochemical cycling, and ecosystem resilience.
+  <div class="about-container">
+
+    <div class="about-text">
+      <p>
+        I am a coastal biogeochemical and hydrology researcher studying the impacts of climate change on rapidly changing coastal environments. My research focuses on Arctic aquatic ecosystems and coastlines, where thermal and hydrologic change are reshaping hydrologic connectivity, biogeochemical cycling, and ecosystem resilience. 
       </p>
-<p>
-My work combines field measurements, geospatial analysis, remote sensing, and environmental sensing datasets to examine how ecological processes, nutrient fluxes, and physical forces interact to drive ecosystem response.
+
+      <p>
+        I enjoy working at the intersection of ecology and physical sciences in order to improve mechanistic understanding of coastal change. My work combines field measurements, geospatial analysis, remote sensing, and environmental sensing datasets to examine how ecological processes, nutrient fluxes, and physical forces interact to drive ecosystem response.
       </p>
-<p>
-In my current appointment at WHOI in the <a href="https://juliaguimond.com/" target="_blank">Guimond Group</a> I am studying hydrothermal impacts and ecological consequences of coastal inundation and saltwater intrusion on permafrost associated coastlines.
+
+      <p>
+        In my current appointment at WHOI in the Applied Ocean Physics and Engineering department with 
+        <a href="https://juliaguimond.com/" target="_blank">Julia Guimond</a> ,
+        I am studying hydrothermal impacts and ecological consequences of coastal inundation and saltwater intrusion on permafrost associated coastlines. I earned my Ph.D. from the University of Texas at El Paso where I worked as part of the Beaufort Lagoons Ecosystems LTER studying coastal aquatic carbon cycling in Arctic ponds, rivers, and lagoons. In addition to Arctic work, I am excited to have the opportunity to go back to my personal and academic roots supporting saltmarsh hydrology and biogeochemistry projects with the Guimond group.
+      </p>
+    </div>
+
+    <div class="about-image">
+      <img src="about.jpg" alt="Eroding coastal bluffs along Elson Lagoon near Utqiagvik, AK">
+<p class="photo-credit">
+  Eroding coastal bluffs along Elson Lagoon near Utqiagvik, AK.
 </p>
 
-    </section>
+    </div>
+
+  </div>
+</section>
+    
 
     <section id="projects">
-      <h2>Projects</h2>
+      <h2>Research</h2>
 
       <div class="projects-grid">
 
         <div class="project-card">
           <img src="project1.jpg" alt="Ice-ocean interactions in nearshore Arctic">
+<p class="photo-credit">
+  Satellite image of sediment laden ice distribution in Elson Lagoon. Photo: <a href="https://dataspace.copernicus.eu" target="_blank">Sentinel-2</a>
+</p>
+
           <div class="content">
             <strong>Ice-ocean Interactions in Nearshore Arctic</strong>
-            <p>Changing climate patterns and surface hydrology are altering nearshore nutrient cycling and circulation. This work examines how wind-driven mixing and riverine influence regulate biogeochemical gradients, air–water gas exchange, and ice–ocean interactions across coastal environments.</p>
+            <p>Changing climate patterns and surface hydrology are altering nearshore nutrient cycling, ice dynamics, and circulation. This work examines how wind-driven mixing and riverine influence regulate biogeochemical gradients, air–water gas exchange, and ice–ocean interactions across coastal environments.</p>
           </div>
         </div>
 
         <div class="project-card">
           <img src="project2.jpg" alt="Coastal inundation and tundra hydrology">
+	  <p class="photo-credit">
+  Julia Guimond and myself deploying water level loggers in coastal groundwater wells near Prudhoe Bay, AK. Photo: <a href="https://www.nathanielwilder.com/" target="_blank">Nathaniel Wilder</a>
+</p>
           <div class="content">
             <strong>Coastal Inundation & Tundra Hydrology</strong>
             <p>Coastal inundation is becoming more prevalent across Alaskan coastlines, with poorly understood hydrothermal and ecological consequences. This research investigates how salinization reshapes subsurface thermal regimes, hydrologic connectivity, and ecosystem vulnerability along Arctic coastlines.</p>
@@ -218,9 +272,13 @@ In my current appointment at WHOI in the <a href="https://juliaguimond.com/" tar
 
         <div class="project-card">
           <img src="project3.jpg" alt="Biogeochemical impacts of thermal alteration">
+<p class="photo-credit">
+  Students sampling surface water in a tundra pond near Utqiagvik, AK.
+</p>
+
           <div class="content">
             <strong>Biogeochemical Impacts of Thermal Alteration</strong>
-            <p>Accelerating peramfrost thaw is mobilizing biogeochemical constituents and disrupting surface-subsurface connectivity on the Arctic coastal plain. I study how shifts in surface–subsurface connectivity influence carbon cycling, ecosystem metabolism, and biogeochemical fluxes in small aquatic systems undergoing environmental change. </p>
+            <p>Accelerating permafrost thaw is mobilizing biogeochemical constituents and disrupting surface-subsurface connectivity on the Arctic coastal plain. I study how shifts in surface–subsurface connectivity influence carbon cycling, ecosystem metabolism, and biogeochemical fluxes in small aquatic systems undergoing environmental change. </p>
           </div>
         </div>
 
